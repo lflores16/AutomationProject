@@ -1,0 +1,12 @@
+Request method:	GET
+>Request URI:	https://simple-grocery-store-api.glitch.me/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+*Path params:	cartId=xpYvLipBjzdMImoHczgvw
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>

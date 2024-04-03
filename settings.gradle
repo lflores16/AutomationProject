@@ -1,0 +1,4 @@
+rootProject.name = 'AutomationProject'
+include 'grocery-api'
+include 'grocery-core'
+

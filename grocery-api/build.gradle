@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+
+dependencies {
+
+    implementation project(":grocery-core")
+
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.3.2'
+}
+
+test {
+    useTestNG()
+}

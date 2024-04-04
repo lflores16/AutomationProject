@@ -24,3 +24,5 @@
 [INFO ] 2024-03-28 22:10:17.545 [Test worker] PropertiesInfo - Particular properties to use: /Users/luisflores/Documents/AT-08-API/AutomationProject/grocery-core/src/main/resources/propertiesEnv/qa.properties
 [INFO ] 2024-03-28 22:11:32.579 [Test worker] PropertiesInfo - Particular properties to use: /Users/luisflores/Documents/AT-08-API/AutomationProject/grocery-core/src/main/resources/propertiesEnv/qa.properties
 [INFO ] 2024-03-28 22:12:38.155 [Test worker] PropertiesInfo - Particular properties to use: /Users/luisflores/Documents/AT-08-API/AutomationProject/grocery-core/src/main/resources/propertiesEnv/qa.properties
+[INFO ] 2024-04-04 10:55:37.410 [Test worker] PropertiesInfo - Particular properties to use: C:\Users\user\Documents\Automation_Project_Luis\AutomationProject\grocery-core\src\main\resources\propertiesEnv\qa.properties
+[INFO ] 2024-04-04 11:12:19.375 [Test worker] PropertiesInfo - Particular properties to use: C:\Users\user\Documents\Automation_Project_Luis\AutomationProject\grocery-core\src\main\resources\propertiesEnv\qa.properties

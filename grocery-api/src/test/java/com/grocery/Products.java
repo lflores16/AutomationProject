@@ -17,13 +17,23 @@ import java.util.Random;
 public class Products {
 
     private HashMap<String, String> headers;
+
+    private HashMap<String, String> pathParams;
+
     private List<Integer> ids;
+
     public static int productId;
+
     public static int currentStock;
+
     private ApiRequestHandler request;
-    private String accessToken;
+
+    //private String accessToken;
+
     private RequestSpecification requestSpec;
+
     private ResponseSpecification responseSpec;
+
     private String endPoint;
 
     @BeforeTest
@@ -31,12 +41,13 @@ public class Products {
 
         request = new ApiRequestHandler();
 
-        accessToken = PropertiesInfo.getInstance().getAccessToken();
+        //accessToken = PropertiesInfo.getInstance().getAccessToken();
 
         headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
 
         request.setBaseUrl(String.format("%s", PropertiesInfo.getInstance().getBaseApi()));
+
         request.setHeaders(headers);
 
         requestSpec = new RequestSpecBuilder()
@@ -47,13 +58,13 @@ public class Products {
                 .expectStatusCode(200)
                 .expectContentType(ContentType.JSON)
                 .build();
-
-        endPoint = "/products";
-        request.setEndpoint(endPoint);
     }
 
     @Test
     public void getAllProducts (){
+
+        endPoint = "/products";
+        request.setEndpoint(endPoint);
 
         var response = RestAssured.given()
                 .spec(requestSpec)
@@ -75,14 +86,19 @@ public class Products {
     @Test
     public void getProduct (){
 
-        int productId = this.productId;
+        pathParams = new HashMap<>();
+        pathParams.put("productId", String.valueOf(this.productId));
 
-        request.setEndpoint(endPoint,productId);
+        request.setPathParams(pathParams);
+
+        endPoint = "/products/{productId}";
+        request.setEndpoint(endPoint);
 
         var response = RestAssured.given()
                 .spec(requestSpec)
                 .log().all().when()
                 .headers(request.getHeaders())
+                .pathParams(request.getPathParams())
                 .get(request.getEndpoint())
                 .then()
                 .spec(responseSpec).extract().response();

@@ -1,5 +1,5 @@
-Request method:	GET
-BRequest URI:	https://simple-grocery-store-api.glitch.me/products
+Request method:	POST
+?Request URI:	https://simple-grocery-store-api.glitch.me/carts
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -10,148 +10,111 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-[
-    {
-        "id": 4643,
-        "category": "coffee",
-?        "name": "Starbucks Coffee Variety Pack, 100% Arabica",
-        "inStock": true
-    },
-    {
-        "id": 4646,
-        "category": "coffee",
-<        "name": "Ethical Bean Medium Dark Roast, Espresso",
-        "inStock": true
-    },
-    {
-        "id": 4641,
-        "category": "coffee",
-?        "name": "Don Francisco Colombia Supremo Medium Roast",
-        "inStock": true
-    },
-    {
-        "id": 1225,
-%        "category": "fresh-produce",
-2        "name": "1/2 in. Brushless Hammer Drill",
-        "inStock": true
-    },
-    {
-        "id": 3674,
-%        "category": "fresh-produce",
-4        "name": "20V Max Cordless Drill Combo Kit",
-        "inStock": true
-    },
-    {
-        "id": 2585,
-%        "category": "fresh-produce",
-)        "name": "Green Cabbage Organic",
-        "inStock": true
-    },
-    {
-        "id": 5851,
-%        "category": "fresh-produce",
-$        "name": "Cucumber Organic",
-        "inStock": false
-    },
-    {
-        "id": 8739,
-%        "category": "fresh-produce",
-)        "name": "Fresh Spinach Organic",
-        "inStock": true
-    },
-    {
-        "id": 2177,
-$        "category": "meat-seafood",
-3        "name": "Cosco Three Step Steel Platform",
-        "inStock": true
-    },
-    {
-        "id": 1709,
-$        "category": "meat-seafood",
-2        "name": "Beef Choice Angus Ribeye Steak",
-        "inStock": true
-    },
-    {
-        "id": 1709,
-$        "category": "meat-seafood",
-'        "name": "Angus Steak Burgers",
-        "inStock": true
-    },
-    {
-        "id": 7395,
-$        "category": "meat-seafood",
-5        "name": "Boneless Skinless Chicken Breasts",
-        "inStock": true
-    },
-    {
-        "id": 8554,
-        "category": "candy",
-#        "name": "Kinder Joy Eggs",
-        "inStock": true
-    },
-    {
-        "id": 6483,
-        "category": "candy",
-*        "name": "Cadbury Milk Chocolate",
-        "inStock": true
-    },
-    {
-        "id": 5774,
-        "category": "candy",
-4        "name": "HERSHEY'S, Milk Chocolate Almond",
-        "inStock": true
-    },
-    {
-        "id": 8753,
-        "category": "dairy",
-$        "name": "Reduced Fat Milk",
-        "inStock": true
-    },
-    {
-        "id": 9482,
-        "category": "dairy",
-        "name": "Whole Milk",
-        "inStock": true
-    },
-    {
-        "id": 5477,
-        "category": "dairy",
-         "name": "Cream Cheese",
-        "inStock": true
-    },
-    {
-        "id": 5478,
-        "category": "dairy",
-*        "name": "Low Fat Vanilla Yogurt",
-        "inStock": true
-    },
-    {
-        "id": 4875,
-$        "category": "bread-bakery",
-0        "name": "2800 Watt Inverter Generator",
-        "inStock": true
-    }
-]
-productId: 5774
+{
+    "created": true,
+&    "cartId": "uiBvLAz3cSIazvDGpjk74"
+}
+ Cart Id: uiBvLAz3cSIazvDGpjk74
 Request method:	GET
-GRequest URI:	https://simple-grocery-store-api.glitch.me/products/5774
+URequest URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	productId=5774
++Path params:	cartId=uiBvLAz3cSIazvDGpjk74
 Headers:		Accept=*/*
 #				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "id": 5774,
-    "category": "candy",
-0    "name": "HERSHEY'S, Milk Chocolate Almond",
-!    "manufacturer": "Hershey's",
-    "price": 1.45,
-    "current-stock": 1,
-    "inStock": true
+    "items": [
+	        
+    ],
+*    "created": "2024-04-04T16:03:16.287Z"
 }
-Current Stock: 1
+Request method:	POST
+[Request URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
++Path params:	cartId=uiBvLAz3cSIazvDGpjk74
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "productId": 5477,
+    "quantity": 1
+}
+{
+    "created": true,
+    "itemId": 1996981
+}
+Request method:	GET
+[Request URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
++Path params:	cartId=uiBvLAz3cSIazvDGpjk74
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "id": 1996981,
+        "productId": 5477,
+        "quantity": 1
+    }
+]
+Request method:	PATCH
+]Request URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74/items/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	itemId=0
+"				cartId=uiBvLAz3cSIazvDGpjk74
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "quantity": 2
+}
+Request method:	PUT
+]Request URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74/items/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	itemId=0
+"				cartId=uiBvLAz3cSIazvDGpjk74
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "productId": 3674,
+    "quantity": 1
+}
+Request method:	DELETE
+]Request URI:	https://simple-grocery-store-api.glitch.me/carts/uiBvLAz3cSIazvDGpjk74/items/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	itemId=0
+"				cartId=uiBvLAz3cSIazvDGpjk74
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
